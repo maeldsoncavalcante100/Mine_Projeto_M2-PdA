@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <title>Biblioteca</title>
+</head>
+
+<body>
+  <header>Catalogo de Filmes e Séries</header>
+  <section>
+    <form id="register">
+      <h3>Cadastre um Filme ou Série</h3>
+      <label for="filmName">Insira o nome do Filme ou Série:</label>
+      <input type="text" name="filmName" id="filmName">
+      <label for="nameAuthor">Insira o diretor do Filme ou Série:</label>
+      <input type="text" name="nameAuthor" id="nameAuthor">
+      <label for="yearPublisher">Insira o ano de lançamento:</label>
+      <input type="text" name="yearPublisher" id="yearPublisher">
+      <label for="numberOfSeason">Insira a quantidade de Horas ou Temporadas:</label>
+      <input type="number" name="numberOfSeason" id="numberOfSeason">
+      <label for="filmCover">Insira o link da capa:</label>
+      <input type="text" name="filmCover" id="filmCover">
+      <label for="synopsis">Insira a sinopse:</label>
+      <textarea name="synopsis" id="synopsis" cols="50" rows="10"></textarea>
+      <button id="btnRegister">Cadastre</button>
+    </form>
+
+    <div id="myModal" class="modal">
+      <div id="contentModel" class="modal-content">
+        <span id="btnCloseModal">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="txtSynopsis"></p>
+      </div>
+    </div>
+
+    <div id="listOfFilmsSearch">
+      <h3>Busque um Filme ou Série</h3>
+      <label for="filmNameSearch">Digite o Filme ou Série que deseja procurar:</label>
+      <input type="text" name="filmNameSearch" id="filmNameSearch">
+      <button id="btnSearch">Buscar</button>
+      <div id="foundFilms"></div>
+    </div>
+
+    <div id="allFilms">
+      <h3 id="titleAllFilms">Todos os Filmes</h3>
+      <div id="listOfAllFilms">
+        <p  id="emptyFilmList">Nenhum Filme cadastrado</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="biblioteca.js"></script>
+</body>
+
+</html>
