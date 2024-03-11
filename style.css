@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  font-size: 36px; 
+  font-size: 36px;
   font-weight: bold;
   text-align: center;
   margin: 30px;
@@ -17,12 +17,12 @@ header {
 
 .logo {
   position: absolute;
-  top: -125px; 
-  left: -40px; 
+  top: -125px;
+  left: -40px;
 }
 
 .logo img {
-  max-width: 250px; 
+  max-width: 250px;
   height: auto;
 }
 
@@ -244,3 +244,21 @@ button#btnRemove::before {
   text-decoration: none;
   cursor: pointer;
 }
+
+
+@media only screen and (max-width: 600px) {
+  section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .logo {
+    top: -150px;
+  }
+
+  h1 {
+    margin: 70px; 
+    font-size: 30px;
+  }
+}
+
